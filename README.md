@@ -41,4 +41,10 @@ Once you have edited the connect statement for all your files, you just need to 
 
 ### Setup the cronjobs
 
-tbd
+A cronjob is used to regularly execute the FetchMenus.php script in order to fill the databases with menus from the DHBW canteen.  The script always fetches the dishes of the next five days, whereby existing values are updated. Scheduling the cronjob to run the script once a day on 12:00am will ensure that dishes that were changed on short notice are updated.
+
+When setting the command to execute the cronjob make sure to also give the path to your PHP interpreter:
+
+`/usr/local/bin/php  /home/dhbwwec1/public_html/FetchMenus.php`
+
+Also keep in mind that cronjobs are executed depending on your server time which might vary from the real time.
