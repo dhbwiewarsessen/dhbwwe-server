@@ -15,7 +15,11 @@ We use [Googiehost](www.googiehost.com) for our server but you can use any webho
 
 ### Setup the database
 
-tbd
+You can create the database on your server by just running our [sql-statement](dhbwwe_data.sql).
+
+You also need to create a user to access the database from the php files. If you don't want to trouble yourself with changing the username and password in all the files, you can take 'dhbwwe_user' as username and 'jhgcwbncskijioihe' as password.
+
+If you want to protect your database, you should obviously change at least the password.
 
 ### Setup the php files
 
